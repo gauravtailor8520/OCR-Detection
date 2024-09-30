@@ -6,7 +6,7 @@ from PIL import Image
 import numpy as np
 
 # Set the path for the Tesseract executable
-pytesseract.pytesseract.tesseract_cmd = r'C://Users//91789//Documents//Desktop//nikhil//tesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = r'C://Users//91789//Documents//Desktop//Parimal//ocr_env//tesseract.exe'
 
 # Set the TESSDATA_PREFIX environment variable
 os.environ['TESSDATA_PREFIX'] = r'C://Users//91789//Documents//Desktop//Parimal//ocr_env//tessdata'
