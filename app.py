@@ -8,26 +8,12 @@ from transformers import AutoModel
 
 
 
-
-@st.cache_resource
-def load_model():
-    return AutoModel.from_pretrained("stepfun-ai/GOT-OCR2_0", trust_remote_code=True)
-
-model = load_model()
-
-
-pytesseract.pytesseract.tesseract_cmd = r'C://Users//91789//Documents//Desktop//Parimal//ocr_env//tesseract.exe'
-else:
-    # On Linux-based systems like Streamlit Cloud, Tesseract is typically installed at /usr/bin/tesseract
-    pytesseract.pytesseract.tesseract_cmd = '/usr/bin/tesseract'
+# Set the path for the Tesseract executable
+pytesseract.pytesseract.tesseract_cmd = r'https://github.com/gauravtailor8520/Parimal/blob/main/tesseract.exe'
 
 # Set the TESSDATA_PREFIX environment variable
-# On Linux, this is usually set automatically. If needed, you can set it here.
-os.environ['TESSDATA_PREFIX'] = '/usr/share/tesseract-ocr/4.00/tessdata'
+os.environ['TESSDATA_PREFIX'] = r'https://github.com/gauravtailor8520/Parimal/tree/main/tessdata' 
 
-
-# Set the TESSDATA_PREFIX environment variable
-os.environ['TESSDATA_PREFIX'] = r'tessdata'
 
 # Function to preprocess the image
 def preprocess_image(image):
