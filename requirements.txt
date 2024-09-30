@@ -97,3 +97,8 @@ watchdog==4.0.2
 wcwidth==0.2.13
 xxhash==3.5.0
 yarl==1.13.1
+streamlit
+opencv-python
+pytesseract
+Pillow
+numpy
