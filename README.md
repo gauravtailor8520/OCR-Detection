@@ -80,8 +80,11 @@ To run this project locally, follow these steps:
 Interface:
 ![Screenshot 2024-10-01 004115](https://github.com/user-attachments/assets/bfcb1c88-d3d2-4210-b17b-b86aa1e6d1d0)
 ---------------------------------------------
+
 Samples:
+
 ![Screenshot 2024-10-01 005142](https://github.com/user-attachments/assets/f24d5476-2974-4217-8069-81d5b58ddef1)
+
 ![Screenshot 2024-10-01 004941](https://github.com/user-attachments/assets/bec67ce9-f70b-4d6a-9f51-f452850f2395)
  
  
