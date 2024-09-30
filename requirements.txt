@@ -3,3 +3,6 @@ opencv-python-headless
 pytesseract
 Pillow
 numpy
+torch
+torchvision
+transformers
