@@ -8,6 +8,10 @@ from transformers import AutoModel
 
 
 
+# Load the Hugging Face OCR model
+model = AutoModel.from_pretrained("stepfun-ai/GOT-OCR2_0", trust_remote_code=True)
+
+
 # Set the path for the Tesseract executable
 pytesseract.pytesseract.tesseract_cmd = r'C://Users//91789//Documents//Desktop//Parimal//ocr_env//tesseract.exe'
 
