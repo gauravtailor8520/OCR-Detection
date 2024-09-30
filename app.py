@@ -15,10 +15,8 @@ def load_model():
 
 model = load_model()
 
-# Dynamically set the Tesseract path based on the operating system
-if platform.system() == "Windows":
-    # Update this path if Tesseract is installed in a different location on your Windows machine
-    pytesseract.pytesseract.tesseract_cmd = r'C://Users//91789//Documents//Desktop//Parimal//ocr_env//tesseract.exe'
+
+pytesseract.pytesseract.tesseract_cmd = r'C://Users//91789//Documents//Desktop//Parimal//ocr_env//tesseract.exe'
 else:
     # On Linux-based systems like Streamlit Cloud, Tesseract is typically installed at /usr/bin/tesseract
     pytesseract.pytesseract.tesseract_cmd = '/usr/bin/tesseract'
