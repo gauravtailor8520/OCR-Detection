@@ -6,8 +6,8 @@ from PIL import Image
 import numpy as np
 from transformers import AutoModel
 
-# Pin a specific revision of the model
-model = AutoModel.from_pretrained("stepfun-ai/GOT-OCR2_0", revision="cf6b7386bc89a54f09785612ba74cb12de6fa17c", trust_remote_code=True)
+# Load the Hugging Face OCR model
+model = AutoModel.from_pretrained("stepfun-ai/GOT-OCR2_0", trust_remote_code=True)
 
 # Set the path for the Tesseract executable
 pytesseract.pytesseract.tesseract_cmd = r'tesseract.exe'
