@@ -4,12 +4,16 @@ import cv2
 import pytesseract
 from PIL import Image
 import numpy as np
+from transformers import AutoModel
+
+# Load the Hugging Face OCR model
+model = AutoModel.from_pretrained("stepfun-ai/GOT-OCR2_0", trust_remote_code=True)
 
 # Set the path for the Tesseract executable
-pytesseract.pytesseract.tesseract_cmd = r'C://Users//91789//Documents//Desktop//Parimal//ocr_env//tesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = r'tesseract.exe'
 
 # Set the TESSDATA_PREFIX environment variable
-os.environ['TESSDATA_PREFIX'] = r'C://Users//91789//Documents//Desktop//Parimal//ocr_env//tessdata'
+os.environ['TESSDATA_PREFIX'] = r'tessdata'
 
 # Function to preprocess the image
 def preprocess_image(image):
