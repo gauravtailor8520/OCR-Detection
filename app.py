@@ -9,10 +9,10 @@ from transformers import AutoModel
 
 
 # Set the path for the Tesseract executable
-pytesseract.pytesseract.tesseract_cmd = r'https://github.com/gauravtailor8520/Parimal/blob/main/tesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = r'C://Users//91789//Documents//Desktop//Parimal//ocr_env//tesseract.exe'
 
 # Set the TESSDATA_PREFIX environment variable
-os.environ['TESSDATA_PREFIX'] = r'https://github.com/gauravtailor8520/Parimal/tree/main/tessdata' 
+os.environ['TESSDATA_PREFIX'] = r'C://Users//91789//Documents//Desktop//Parimal//ocr_env//tessdata' 
 
 
 # Function to preprocess the image
