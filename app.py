@@ -50,7 +50,7 @@ def extract_text_from_image(image_path):
     return extracted_text
 
 # Streamlit app layout
-st.title("OCR with Tesseract")
+st.title("OCR with Tesseract and GOT-OCR2_0")
 
 # Upload image
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "png", "jpeg"])
